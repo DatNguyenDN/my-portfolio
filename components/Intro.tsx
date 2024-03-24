@@ -64,7 +64,7 @@ export default function Intro() {
         <span className="font-bold">fresher Frontend Developer</span> with
         <span className="font-bold"> one year</span> of professional experience in building
         responsive and user-friendly web applications. I enjoy building{" "}
-        <span className="italic">sites & apps</span>. popular frameworks such as{" "}
+        <span className="">websites and applications</span> using popular frameworks such as{" "}
         <span className="underline">React.js and Next.js</span>
       </motion.h1>
       <motion.div
