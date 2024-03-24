@@ -53,14 +53,14 @@ export default function Contact() {
           placeholder="Your email"
           required
           maxLength={500}
-          className="h-14 rounded-lg px-4 border border-black/75 bg-secondary"
+          className="h-14 rounded-lg px-4 border border-accent-foreground bg-input outline-none"
         />
         <textarea
           placeholder="Your message"
           name="message"
           required
           maxLength={5000}
-          className="h-52 my-3 p-4 rounded-lg border border-black/75 bg-secondary"
+          className="h-52 my-3 p-4 rounded-lg border border-accent-foreground bg-input outline-none"
         />
         <SubmitBtn />
       </form>
