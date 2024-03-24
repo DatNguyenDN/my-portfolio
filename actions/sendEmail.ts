@@ -3,7 +3,7 @@ import { Resend } from "resend";
 import { getErrorMessage, validateString } from "@/lib/utils";
 import ContactFormEmail from "@/email/contact-form-email";
 import React from "react";
-const resend = new Resend(process.env.RESEND_API_KEY);
+const resend = new Resend(process.env.NEXT_PUBLIC_RESEND_API_KEY);
 
 export const sendEmail = async (formData: FormData) => {
   "use server";
