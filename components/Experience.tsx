@@ -34,7 +34,7 @@ export default function Experience() {
               date={item.date}
               icon={item.icon}
               iconStyle={{
-                background: "hsl(var(--card)",
+                background: "hsl(var(--card))",
                 fontSize: "1.5rem",
               }}
             >
