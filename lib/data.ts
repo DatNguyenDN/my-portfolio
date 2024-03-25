@@ -5,6 +5,8 @@ import { LuGraduationCap } from "react-icons/lu";
 import corpcommentImg from "@/public/corpcomment.png";
 import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
+import priceTracker from "@/public/priceTracker.png";
+import bloomyu from "@/public/bloomyu.png";
 
 export const links = [
   {
@@ -62,26 +64,37 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "Price Tracker Website",
+    url: "https://pricetrackerweb-devtest.azurewebsites.net/",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+      " Users can track product prices from the Nintendo eShop (https://store.nintendo.com.au/au/nintendo-eshop) and will receive an email alert as soon as the price drops.",
+    tags: ["JavaScript", "React", "Redux", "Tailwind", "Axios Interceptor", "Framer-Motion"],
+    imageUrl: priceTracker,
   },
   {
-    title: "rmtDev",
+    title: "Bloomyu",
+    url: "https://bloomyu.com",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+      "This website caters to IT job seekers by providing a recruitment platform where they can search for jobs, apply filters to refine their search results, and submit their CVs directly to companies posting job openings.",
+    tags: [
+      "TypeScript",
+      "Next.js",
+
+      "Antd Design",
+      "Redux",
+      "Axios Interceptor",
+      "Framer-Motion",
+      "React-Quill",
+    ],
+    imageUrl: bloomyu,
   },
-  {
-    title: "Word Analytics",
-    description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
-  },
+  // {
+  //   title: "Word Analytics",
+  //   description:
+  //     "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
+  //   tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+  //   imageUrl: wordanalyticsImg,
+  // },
 ] as const;
 
 export const skillsData = [

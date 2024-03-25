@@ -7,7 +7,8 @@ import { useRef } from "react";
 import { motion } from "framer-motion";
 type ProjectProps = (typeof projectsData)[number];
 
-function ProjectCard({ title, description, tags, imageUrl }: ProjectProps) {
+function ProjectCard({ title, description, tags, imageUrl, url }: ProjectProps) {
+  console.log(url);
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -24,14 +25,22 @@ function ProjectCard({ title, description, tags, imageUrl }: ProjectProps) {
       }}
       className=" group mb-4 sm:mb-8 last:mb-0"
     >
-      <section className="group bg-border rounded-lg max-w-[42rem] border border-border overflow-hidden sm:pr-8 relative sm:h-[20rem]  hover:bg-ring group-even:even:pl-8 transition">
-        <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem]">
-          <h3 className="text-2xl font-semibold">{title}</h3>
-          <p className="mt-2 leading-relaxed  text-foreground/65">{description}</p>
+      <section className="group bg-border rounded-lg max-w-[45rem] border border-border overflow-hidden sm:pr-8 relative sm:h-[23rem]  group-even:even:pl-8 transition">
+        <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem]  ">
+          <h3 className="text-2xl font-semibold hover:text-ring cursor-pointer">
+            <a href={url} target="_blank" rel="noopener noreferrer">
+              {title}
+            </a>
+          </h3>
+
+          <p className="mt-2 leading-relaxed  text-foreground/65 sm:group-even:w-[350px] sm:group-even:">
+            {description}
+          </p>
+
           <ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto">
             {tags.map((tag, index) => (
               <li
-                className="px-3 py-1 text-[0.7rem] uppercase tracking-wider bg-secondary-foreground text-secondary rounded-full"
+                className="px-3 py-1 text-[0.7rem] uppercase tracking-wider bg-secondary-foreground text-secondary rounded-full "
                 key={index}
               >
                 {tag}

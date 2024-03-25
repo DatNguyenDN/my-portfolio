@@ -87,8 +87,7 @@ export default function Intro() {
             size="lg"
             className="bg-primary  flex items-center  outline-none  px-7 py-3 rounded-full gap-2 focus:scale-110 hover:scale-110 active:scale-105 transition hover:border-2 group"
           >
-            Contact me here{" "}
-            <FaArrowCircleRight className="opacity-70 group-hover:translate-x-1  " />
+            Contact me here <FaArrowCircleRight className=" group-hover:translate-x-1  " />
           </Button>
         </Link>
 
@@ -96,7 +95,7 @@ export default function Intro() {
           size="lg"
           className="px-7 py-3 rounded-full gap-2 focus:scale-110 hover:scale-110 active:scale-105 transition hover:border-2  group"
         >
-          Download CV <MdDownloadForOffline className="opacity-70 group-hover:translate-y-1  " />
+          Download CV <MdDownloadForOffline className="group-hover:translate-y-1  " />
         </Button>
 
         <a className="px-7 py-3 rounded-full gap-2 bg-primary text-background cursor-pointer focus:scale-110 hover:scale-110 active:scale-105 hover:border-2 hover:border-green-500 ">
