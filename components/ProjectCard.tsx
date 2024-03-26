@@ -8,7 +8,6 @@ import { motion } from "framer-motion";
 type ProjectProps = (typeof projectsData)[number];
 
 function ProjectCard({ title, description, tags, imageUrl, url }: ProjectProps) {
-  console.log(url);
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: ref,

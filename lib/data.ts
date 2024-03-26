@@ -7,7 +7,7 @@ import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
 import priceTracker from "@/public/priceTracker.png";
 import bloomyu from "@/public/bloomyu.png";
-
+import fourseasons from "@/public/fourseasons.png";
 export const links = [
   {
     name: "Home",
@@ -88,13 +88,14 @@ export const projectsData = [
     ],
     imageUrl: bloomyu,
   },
-  // {
-  //   title: "Word Analytics",
-  //   description:
-  //     "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-  //   tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-  //   imageUrl: wordanalyticsImg,
-  // },
+  {
+    title: "Four Seasons Hotel",
+    url: "https://four-seasons-hotel.netlify.app/",
+    description:
+      "Offers a user-friendly admin dashboard tailored for efficient hotel room and booking management, with added functionality to track sales through insightful charts <email:admin@gmail.com> <password:admin123>",
+    tags: ["Vite", "Styled Component", "Supabase", "React Query", "Recharts"],
+    imageUrl: fourseasons,
+  },
 ] as const;
 
 export const skillsData = [
