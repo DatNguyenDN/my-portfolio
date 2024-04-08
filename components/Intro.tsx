@@ -11,6 +11,16 @@ import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { FaArrowCircleRight } from "react-icons/fa";
 import { MdDownloadForOffline } from "react-icons/md";
 
+function DownloadResume() {
+  const resume = "/Nguyen_Cong_Dat_resume.pdf";
+  const anchor = document.createElement("a");
+  anchor.href = resume;
+  anchor.download = "Nguyen_Cong_Dat_resume";
+  document.body.appendChild(anchor);
+  anchor.click();
+  document.body.removeChild(anchor);
+}
+
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
@@ -61,11 +71,10 @@ export default function Intro() {
         animate={{ opacity: 1, y: 0 }}
       >
         <span className="font-bold">Hello, I'm Dat Nguyen.</span> I'm a{" "}
-        <span className="font-bold">fresher Frontend Developer</span> with
-        <span className="font-bold"> one year</span> of professional experience in building
+        <span className="font-bold">fresher Frontend Developer</span> with experience in building
         responsive and user-friendly web applications. I enjoy building{" "}
         <span className="">websites and applications</span> using popular frameworks such as{" "}
-        <span className="underline">React.js and Next.js</span>
+        <span className="underline">React</span>
       </motion.h1>
       <motion.div
         className="flex flex-col sm:flex-row  items-center justify-center gap-5 px-4 "
@@ -94,13 +103,14 @@ export default function Intro() {
         <Button
           size="lg"
           className="px-7 py-3 rounded-full gap-2 focus:scale-110 hover:scale-110 active:scale-105 transition hover:border-2  group"
+          onClick={DownloadResume}
         >
           Download CV <MdDownloadForOffline className="group-hover:translate-y-1  " />
         </Button>
 
-        <a className="px-7 py-3 rounded-full gap-2 bg-primary text-background cursor-pointer focus:scale-110 hover:scale-110 active:scale-105 hover:border-2 hover:border-green-500 ">
+        {/* <a className="px-7 py-3 rounded-full gap-2 bg-primary text-background cursor-pointer focus:scale-110 hover:scale-110 active:scale-105 hover:border-2 hover:border-green-500 ">
           <BsLinkedin />
-        </a>
+        </a> */}
 
         <a
           className="px-7 py-3 rounded-full items-center gap-2 bg-primary text-background cursor-pointer focus:scale-110 hover:scale-110 active:scale-105 hover:border-2 hover:border-green-500 "

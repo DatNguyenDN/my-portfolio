@@ -22,13 +22,16 @@ export default function About() {
         to pursue my passion for programming. I enrolled in a coding bootcamp and learned{" "}
         <span className="font-medium">front-end web development</span>.{" "}
         <span className="italic">My favorite part of programming</span> is the problem-solving
-        aspect. I <span className="underline">love</span> the feeling of finally figuring out a
-        solution to a problem and committed to delivering high-quality code and exceptional user
-        experiences. My core stack is <span className="font-medium">React, Next.js. </span>Basic
+        aspect. I love the feeling of finally figuring out a solution to a problem and committed to
+        delivering high-quality code and exceptional user experiences. My core stack is{" "}
+        <span className="font-medium">
+          React, Next.js.
+          {/* </span>Basic
         knowledge of <span className="font-medium">Node.js</span>, including familiarity with the{" "}
         <span className="font-medium">Nest.js</span> framework, for backend development and NoSQL
-        databases like MongoDB . I am also familiar with TypeScript and Prisma. I am always looking
-        to learn new technologies. I am currently looking for a{" "}
+        databases like MongoDB . I am also familiar with TypeScript and Prisma. */}{" "}
+          I am always looking to learn new technologies. I am currently looking for a{" "}
+        </span>
         <span className="font-medium">full-time position</span> as a front-end developer.
       </p>
 
