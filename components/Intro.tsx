@@ -112,13 +112,13 @@ export default function Intro() {
           <BsLinkedin />
         </a> */}
 
-        <a
+        {/* <a
           className="px-7 py-3 rounded-full items-center gap-2 bg-primary text-background cursor-pointer focus:scale-110 hover:scale-110 active:scale-105 hover:border-2 hover:border-green-500 "
           href="https://github.com/DatNguyenDN"
           target="_blank"
         >
           <BsGithub />
-        </a>
+        </a> */}
       </motion.div>
     </section>
   );
